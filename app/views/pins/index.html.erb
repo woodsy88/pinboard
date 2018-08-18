@@ -1,0 +1,7 @@
+<h1>Pins index Page</h1> 
+
+<%= link_to 'New Pin', new_pin_path %>
+
+<% @pins.each do |pin| %>
+  <%= link_to pin.title, pin %>
+<% end %>
